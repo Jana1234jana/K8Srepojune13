@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ReplicationController 
 metadata:
-  name: mynignx0-rc
+  name: mynignx-rc
 spec:
   replicas: 4
   selectors: 
@@ -13,6 +13,6 @@ spec:
   spec: 
     containers:
     - name: first-container
-      image: ngiex 
+      image: nginx 
       ports:
        - containserPort: 80
